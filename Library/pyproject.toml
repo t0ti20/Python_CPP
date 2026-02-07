@@ -1,0 +1,79 @@
+# ============================================================================
+# Python Project Configuration (PEP 518/621 compliant)
+# ============================================================================
+# This file defines the build system and package metadata for your Python
+# extension module.
+#
+# CUSTOMIZATION GUIDE:
+# Replace all instances of "hello-cpp" and "hello_cpp" with your project name
+# ============================================================================
+
+[build-system]
+# Specify build dependencies and the build backend
+# scikit-build-core: Modern CMake-based Python build system
+# pybind11: C++/Python binding library
+requires = ["scikit-build-core", "pybind11"]
+build-backend = "scikit_build_core.build"
+
+# ============================================================================
+# Project Metadata
+# ============================================================================
+[project]
+# Package name (used for pip install <name>)
+# Convention: use hyphens for PyPI package names
+# CHANGE THIS: Replace "hello-cpp" with your package name
+name = "CPP_Lib"
+
+# Package version (follows Semantic Versioning: MAJOR.MINOR.PATCH)
+# CHANGE THIS: Update version as your project evolves
+version = "0.1.0"
+
+# Short description of your package (shown on PyPI)
+# CHANGE THIS: Describe what your package does
+description = "C++ Template Python extension"
+
+# Minimum Python version required
+# CHANGE THIS: Set based on your compatibility requirements
+requires-python = ">=3.12"
+
+# ============================================================================
+# Runtime Dependencies
+# ============================================================================
+# List packages required at runtime (installed automatically with your package)
+# dependencies = [
+#     "numpy>=1.20",
+#     "scipy>=1.7",
+# ]
+
+# ============================================================================
+# Optional Dependencies
+# ============================================================================
+# Define optional dependency groups for different use cases
+# Install with: pip install hello-cpp[dev]
+# [project.optional-dependencies]
+# dev = [
+#     "pytest>=7.0",
+#     "black>=22.0",
+#     "mypy>=0.950",
+# ]
+# docs = [
+#     "sphinx>=4.0",
+#     "sphinx-rtd-theme>=1.0",
+# ]
+
+# ============================================================================
+# scikit-build-core Configuration
+# ============================================================================
+[tool.scikit-build]
+# CMake configuration options
+# cmake.build-type = "Release"
+# cmake.verbose = true
+
+# Minimum required CMake version
+# cmake.minimum-version = "3.15"
+
+# Additional CMake arguments
+# cmake.args = ["-DBUILD_TESTING=OFF"]
+
+# Build directory
+# build-dir = "build/{wheel_tag}"

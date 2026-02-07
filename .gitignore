@@ -1,0 +1,51 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache/
+*.mypy_cache/
+*.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# =========================
+# C++ / CMake
+# =========================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+Makefile.cmake
+*_CPP_Lib.*.so
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+*.log
+install_manifest.txt
+*.dir/
+CompilerIdCXX/
+
+# =========================
+# IDEs / Editors
+# =========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
